@@ -18,7 +18,8 @@ dependencies {
     // https://mvnrepository.com/artifact/com.relevantcodes/extentreports
     compile group: 'com.relevantcodes', name: 'extentreports', version: '2.41.2'
 }
-test{
-useTestNG()
-include '**src.test.java.tests.LoginTest/*'
+test {
+    useTestNG() {
+        suites '/src/test/java/TestNG.xml'
+    }
 }
