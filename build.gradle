@@ -17,7 +17,8 @@ dependencies {
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
     // https://mvnrepository.com/artifact/com.relevantcodes/extentreports
     compile group: 'com.relevantcodes', name: 'extentreports', version: '2.41.2'
-
-
-
+}
+test{
+useTestNG()
+include '**src.test.java.tests.LoginTest/*'
 }
